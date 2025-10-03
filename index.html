@@ -43,10 +43,19 @@
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Accusamus repudiandae dignissimos velit quidem similique culpa
-              provident? Iste molestias, illo ab perferendis, officiis facilis
-              unde distinctio sunt, suscipit necessitatibus asperiores maxime?
+              I am Ria Dutta, an enthusiastic MCA graduate with a strong
+              foundation in mathematics and a keen interest in full-stack web
+              development and AI-powered applications. I enjoy building
+              practical projects that blend creativity with technology, such as
+              food delivery apps, Saas Code Editor, and interactive web
+              platforms. I have hands-on experience with Java, SQL, React.js,
+              Node.js, MongoDB, and other modern technologies, and I love
+              learning and experimenting with new tools to solve real-world
+              problems. My approach is to write clean, efficient code while
+              focusing on user-friendly interfaces and engaging experiences. I
+              am passionate about continuous learning and applying my skills to
+              deliver impactful solutions that make technology accessible and
+              enjoyable.
             </p>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills')">
@@ -95,10 +104,16 @@
             <i class="fa-solid fa-code"></i>
             <h2>Web Design</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
-              tempore quod nihil numquam voluptates corporis, dolores ex
-              repellat non iusto ea deleniti odio nemo, reprehenderit eaque
-              culpa deserunt sunt ipsa.
+              I design responsive, user-friendly, and visually appealing
+              websites that blend aesthetics with functionality. Skilled in
+              HTML, CSS, JavaScript, React.js, Next.js, Tailwind CSS, and design
+              tools like Figma and Adobe XD, I create clean layouts, smooth
+              navigation, and interactive elements. My projects include a SaaS
+              Code Editor,a food delivery platform, all optimized for desktop
+              and mobile, with features like real-time execution, auth and
+              snippet sharing, and live order tracking. I continuously enhance
+              my work with modern UI/UX practices and plan to add AI-powered
+              recommendations and dark mode for an even better user experience.
             </p>
             <a href="#">Learn more</a>
           </div>
@@ -107,10 +122,16 @@
             <i class="fa-solid fa-crop-simple"></i>
             <h2>UI/UX Design</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
-              tempore quod nihil numquam voluptates corporis, dolores ex
-              repellat non iusto ea deleniti odio nemo, reprehenderit eaque
-              culpa deserunt sunt ipsa.
+              I design intuitive and user-friendly interfaces that focus on
+              seamless user experiences and clean layouts. Using HTML, CSS,
+              JavaScript, React.js, and Tailwind CSS, I create responsive web
+              pages with interactive elements and smooth navigation. My
+              projects, including a SaaS code editor, a smart healthcare
+              assistant, and a food delivery web app, demonstrate practical
+              UI/UX design through dashboards, menus, and real-time
+              interactions, all optimized for desktop and mobile. I focus on
+              improving usability and engagement while continuously enhancing my
+              projects with better functionality and modern design practices.
             </p>
             <a href="#">Learn more</a>
           </div>
@@ -119,10 +140,15 @@
             <i class="fa-brands fa-app-store-ios"></i>
             <h2>App Design</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
-              tempore quod nihil numquam voluptates corporis, dolores ex
-              repellat non iusto ea deleniti odio nemo, reprehenderit eaque
-              culpa deserunt sunt ipsa.
+              I design user-friendly and visually appealing applications with a
+              focus on smooth navigation and engaging user experiences. Using
+              technologies like React.js, Node.js, and Tailwind CSS, I build
+              responsive and interactive apps optimized for both desktop and
+              mobile. My projects, including a food delivery app, and a SaaS code
+              editor, showcase clean dashboards, intuitive menus, and real-time
+              features that make app interactions simple and enjoyable. I
+              continuously refine my app designs to improve usability,
+              performance, and overall user satisfaction.
             </p>
             <a href="#">Learn more</a>
           </div>
@@ -189,8 +215,8 @@
         <div class="row">
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
-            <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+            <p><i class="fa-solid fa-paper-plane"></i> riadutta257@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 6206094257</p>
             <div class="social-icons">
               <a href="https://facebook.com/"
                 ><i class="fa-brands fa-facebook"></i
@@ -199,17 +225,17 @@
               <a href="#"><i class="fa-brands fa-instagram"></i></a>
               <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            <a href="images/RIA'S CV.pdf" download class="btn btn2">Download CV</a>
           </div>
           <div class="contact-right">
-
             <form name="submit-to-google-sheet">
               <input type="text" name="Name" placeholder="Your Name" required />
               <input
                 type="email"
                 name="Email"
                 placeholder="Your Email"
-                required/>
+                required
+              />
               <textarea
                 name="Message"
                 rows="6"
@@ -218,7 +244,6 @@
               <button type="submit" class="btn btn2">Submit</button>
             </form>
             <span id="msg"></span>
-
           </div>
         </div>
       </div>
@@ -263,17 +288,17 @@
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbx9_i4LX1BhrVFTrBcs8Pg02yT2uSiuNgX5rNrTiHP3S4ZbzMJrkwaHo07o7mxXqynDGA/exec";
       const form = document.forms["submit-to-google-sheet"];
-      const msg = document.getElementById("msg")
+      const msg = document.getElementById("msg");
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-              msg.innerHTML = ""
-            },5000)
-            form.reset()
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
           })
           .catch((error) => console.error("Error!", error.message));
       });
